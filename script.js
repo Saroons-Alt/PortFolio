@@ -1,11 +1,17 @@
 /* ===================================================================
-   NAITIK — PORTFOLIO
+   SAROON — PORTFOLIO
    Vanilla JS: loader, scroll reveals, nav state, cursor glow,
    subtle parallax, scroll progress, mobile menu.
+   Made with ❤️ and occasional rage
 =================================================================== */
 
 (() => {
   'use strict';
+
+  // Console Easter Egg
+  console.log('👋 Hey! If you\'re reading this, you\'re cool.');
+  console.log('🚀 Check out my GitHub: github.com/Saroons-Alt');
+  console.log('🥤 Fueled by diet coke');
 
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -21,7 +27,6 @@
 
     function tick(now) {
       const elapsed = now - start;
-      // ease-out progress curve so it feels alive, not linear
       progress = Math.min(100, Math.round((1 - Math.pow(1 - elapsed / duration, 3)) * 100));
       loaderFill.style.width = progress + '%';
       loaderPct.textContent = progress;
@@ -168,7 +173,6 @@
     let rafId = null;
 
     function animateGlow() {
-      // simple lerp for a smooth trailing effect
       currentX += (targetX - currentX) * 0.12;
       currentY += (targetY - currentY) * 0.12;
       cursorGlow.style.transform = `translate(${currentX}px, ${currentY}px) translate(-50%, -50%)`;
@@ -192,7 +196,7 @@
   if (heroInner && isFinePointer && !prefersReducedMotion) {
     window.addEventListener('mousemove', (e) => {
       const { innerWidth: w, innerHeight: h } = window;
-      const x = (e.clientX / w - 0.5) * 2;   // -1 to 1
+      const x = (e.clientX / w - 0.5) * 2;
       const y = (e.clientY / h - 0.5) * 2;
 
       heroInner.style.transform = `translate(${x * 8}px, ${y * 6}px)`;
