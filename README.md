@@ -2,16 +2,15 @@
 
 My personal portfolio website.
 
-I'm Saroon, a student and self-taught web developer. This is a collection of the things I've been building while learning — from small JavaScript projects to the portfolio itself.
+I'm Saroon, a student and self-taught web developer. This is a portfolio showcasing some of the things I've been building while learning — from small projects to the portfolio itself.
 
 ## Projects
 
 A few things currently featured:
 
-* **Game** — A JavaScript game I built from scratch.
+* **Fav Game Website** — Just a fanmade Minecraft website.
 * **Todo** — A simple todo app.
-* **Vault** — A small project exploring UI and JavaScript.
-* **Portfolio** — This website.
+* **Vault** — A small project for tracking your financial actions.
 
 ## Built With
 
